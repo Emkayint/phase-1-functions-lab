@@ -12,3 +12,17 @@
      let distanceTravelledFeet = (Math.abs(start - stop) * 264);
      return distanceTravelledFeet;
  }
+
+ const calculatesFarePrice = function(start, destination){
+     let feetToPay = distanceTravelledInFeet (start, destination);
+
+     if(feetToPay < 400){
+        return 0;
+     } else if(feetToPay > 400 && feetToPay < 2000){
+         return (feetToPay - 400) * 0.02;
+     } else if(feetToPay > 2000 && feetToPay < 2500){
+         return 25;
+     } else {
+         return "cannot travel that far"
+     }
+ }
