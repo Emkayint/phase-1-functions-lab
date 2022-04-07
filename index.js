@@ -7,3 +7,8 @@
      let distanceInFeet = (Math.abs(feet -42) * 264);
      return distanceInFeet;
  }
+
+ const distanceTravelledInFeet = function(start, stop){
+     let distanceTravelledFeet = (Math.abs(start - stop) * 264);
+     return distanceTravelledFeet;
+ }
